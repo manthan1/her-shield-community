@@ -138,7 +138,7 @@ const Index = () => {
                     />
                   </div>
                   <div className="text-center lg:text-left">
-                    <Quote className="h-8 w-8 mb-4 mx-auto lg:mx-0 opacity-80" />
+                    <Quote className="h-8 w-8 mb-4 mx-auto lg:mx-0 opacity-80 text-orange-900" />
                     <blockquote className="font-serif text-xl lg:text-2xl italic mb-6 leading-relaxed text-orange-900">
                       "Every woman deserves a safe space to grow, dream, and thrive. HerShield exists to ensure that immigrant women not only survive but flourish in their new communities."
                     </blockquote>
