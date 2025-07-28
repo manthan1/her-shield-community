@@ -74,8 +74,8 @@ const About = () => {
         <section className="mb-20">
           <Card className="shadow-lifted bg-gradient-empowering text-white">
             <CardContent className="p-8 lg:p-12 text-center">
-              <Compass className="h-12 w-12 mx-auto mb-6 opacity-90" />
-              <h2 className="font-serif text-3xl font-bold mb-6 text-primary">Our Mission</h2>
+              <Compass className="h-12 w-12 mx-auto mb-6 opacity-90 text-primary" />
+              <h2 className="font-serif text-3xl font-bold mb-6">Our Mission</h2>
               <p className="text-xl leading-relaxed max-w-4xl mx-auto text-muted-foreground">
                 To create safe, empowering spaces where immigrant women can find their voice, 
                 build meaningful connections, and access the resources they need to thrive in 
