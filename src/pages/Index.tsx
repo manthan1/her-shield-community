@@ -19,7 +19,7 @@ const Index = () => {
               <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-black leading-tight">
                 Elevating women through unity and support
               </h1>
-              <p className="text-xl text-black leading-relaxed">
+              <p className="text-xl text-muted-foreground leading-relaxed">
                 HerShield is a nonprofit movement creating safe, empowering spaces for immigrant women to be seen, heard, and supported.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
