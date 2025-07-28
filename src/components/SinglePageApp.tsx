@@ -71,7 +71,7 @@ const SinglePageApp = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-warm-beige via-warm-beige to-maroon-primary">
+    <div className="min-h-screen bg-warm-beige">
       {/* Hero Section */}
       <section 
         className="relative min-h-screen flex flex-col justify-center items-center text-white"
@@ -229,7 +229,7 @@ const SinglePageApp = () => {
       </section>
 
       {/* Our Causes Section */}
-      <section className="py-16 md:py-20">
+      <section className="py-16 md:py-20 bg-maroon-primary">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
             <div>
@@ -253,7 +253,7 @@ const SinglePageApp = () => {
       </section>
 
       {/* What We Do Section */}
-      <section className="py-16 md:py-20">
+      <section className="py-16 md:py-20 bg-maroon-primary">
         <div className="container mx-auto px-6">
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-center mb-12 md:mb-16 tracking-wide text-white">
             What We Do
@@ -275,7 +275,7 @@ const SinglePageApp = () => {
       {/* Founder Section */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-6">
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white text-center mb-12 md:mb-16">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-maroon-primary text-center mb-12 md:mb-16">
             Founder of Hershield
           </h2>
           
@@ -296,7 +296,7 @@ const SinglePageApp = () => {
                 />
               </div>
               <div className="lg:col-span-1 text-center">
-                <p className="text-white text-sm md:text-base">
+                <p className="text-maroon-primary text-sm md:text-base">
                   A little biography about Shafoli Kapur.<br/>
                   blahblahblah
                 </p>
@@ -309,7 +309,7 @@ const SinglePageApp = () => {
       {/* Our Team Section */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-6">
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white text-center mb-12 md:mb-16">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-maroon-primary text-center mb-12 md:mb-16">
             OUR TEAM
           </h2>
           
@@ -319,10 +319,10 @@ const SinglePageApp = () => {
                 <div className="w-full h-40 md:h-48 bg-gradient-to-b from-blue-200 to-green-300 rounded-3xl mb-4">
                   {/* Placeholder team member image */}
                 </div>
-                <h3 className="font-serif text-base md:text-lg font-bold text-white mb-2">
+                <h3 className="font-serif text-base md:text-lg font-bold text-maroon-primary mb-2">
                   {member.name}
                 </h3>
-                <p className="text-sm text-white">{member.description}</p>
+                <p className="text-sm text-maroon-primary">{member.description}</p>
               </div>
             ))}
           </div>
@@ -330,7 +330,7 @@ const SinglePageApp = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 md:py-20">
+      <section id="contact" className="py-16 md:py-20 bg-maroon-primary">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16">
             <div>
