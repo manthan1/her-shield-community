@@ -76,7 +76,7 @@ const About = () => {
             <CardContent className="p-8 lg:p-12 text-center">
               <Compass className="h-12 w-12 mx-auto mb-6 opacity-90 text-orange-900" />
               <h2 className="font-serif text-3xl font-bold mb-6">Our Mission</h2>
-              <p className="text-xl leading-relaxed max-w-4xl mx-auto">
+              <p className="text-xl leading-relaxed max-w-4xl mx-auto text-orange-900">
                 To create safe, empowering spaces where immigrant women can find their voice, 
                 build meaningful connections, and access the resources they need to thrive in 
                 their new communities. We believe in the power of sisterhood to transform lives 
