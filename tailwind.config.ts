@@ -67,11 +67,10 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				'warm-beige': 'hsl(var(--warm-beige))',
-				'earth-brown': 'hsl(var(--earth-brown))',
-				'terracotta': 'hsl(var(--terracotta))',
-				'soft-cream': 'hsl(var(--soft-cream))',
-				'sage-green': 'hsl(var(--sage-green))',
-				'dusty-rose': 'hsl(var(--dusty-rose))'
+				'maroon-primary': 'hsl(var(--maroon-primary))',
+				'maroon-light': 'hsl(var(--maroon-light))',
+				'cream': 'hsl(var(--cream))',
+				'text-dark': 'hsl(var(--text-dark))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

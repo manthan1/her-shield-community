@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,57 +8,52 @@
 
 @layer base {
   :root {
-    /* Warm beige and earth tones */
-    --background: 35 20% 96%; /* Soft warm beige */
-    --foreground: 25 40% 15%; /* Deep warm brown */
+    /* HerShield brand colors matching the design */
+    --background: 28 25% 90%; /* Light beige background */
+    --foreground: 344 35% 35%; /* Dark maroon text */
 
-    --card: 35 25% 98%; /* Warmer card background */
-    --card-foreground: 25 40% 15%;
+    --card: 28 25% 95%; /* Lighter card background */
+    --card-foreground: 344 35% 35%;
 
-    --popover: 35 25% 98%;
-    --popover-foreground: 25 40% 15%;
+    --popover: 28 25% 95%;
+    --popover-foreground: 344 35% 35%;
 
-    /* Empowering warm primary colors */
-    --primary: 25 60% 35%; /* Rich warm brown */
-    --primary-foreground: 35 25% 98%;
+    /* Primary brand color - maroon/burgundy */
+    --primary: 344 35% 35%; /* Deep maroon */
+    --primary-foreground: 28 25% 95%;
 
-    --secondary: 35 40% 85%; /* Soft beige */
-    --secondary-foreground: 25 40% 15%;
+    --secondary: 28 25% 85%; /* Light beige */
+    --secondary-foreground: 344 35% 35%;
 
-    --muted: 35 30% 90%; /* Light warm gray */
-    --muted-foreground: 25 20% 45%;
+    --muted: 28 20% 88%; 
+    --muted-foreground: 344 20% 50%;
 
-    --accent: 15 75% 65%; /* Warm terracotta accent */
-    --accent-foreground: 35 25% 98%;
+    --accent: 344 45% 55%; /* Lighter maroon accent */
+    --accent-foreground: 28 25% 95%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 35 25% 98%;
+    --destructive-foreground: 28 25% 95%;
 
-    --border: 35 25% 85%;
-    --input: 35 25% 90%;
-    --ring: 15 75% 65%;
+    --border: 28 20% 80%;
+    --input: 28 20% 88%;
+    --ring: 344 45% 55%;
 
     --radius: 0.75rem;
 
-    /* Custom HerShield colors */
-    --warm-beige: 35 20% 96%;
-    --earth-brown: 25 60% 35%;
-    --terracotta: 15 75% 65%;
-    --soft-cream: 35 25% 98%;
-    --sage-green: 100 25% 70%;
-    --dusty-rose: 340 50% 75%;
+    /* Custom HerShield colors from design */
+    --warm-beige: 28 25% 90%;
+    --maroon-primary: 344 35% 35%;
+    --maroon-light: 344 45% 55%;
+    --cream: 28 25% 95%;
+    --text-dark: 344 35% 35%;
 
-    /* Gradients */
-    --gradient-warm: linear-gradient(135deg, hsl(35 20% 96%), hsl(35 40% 85%));
-    --gradient-empowering: linear-gradient(135deg, hsl(15 75% 65%), hsl(25 60% 45%));
+    /* Gradients matching the design */
+    --gradient-hero: linear-gradient(135deg, rgba(139, 69, 19, 0.7), rgba(160, 82, 45, 0.5));
+    --gradient-maroon: linear-gradient(135deg, hsl(344 35% 35%), hsl(344 45% 55%));
 
-    /* Shadows */
-    --shadow-warm: 0 4px 20px -4px hsl(25 60% 35% / 0.15);
-    --shadow-lifted: 0 8px 30px -8px hsl(25 60% 35% / 0.2);
-
-    /* Typography */
-    --font-serif: 'Crimson Text', serif;
-    --font-sans: 'Inter', sans-serif;
+    /* Typography matching design */
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Lato', sans-serif;
 
     --sidebar-background: 0 0% 98%;
 
