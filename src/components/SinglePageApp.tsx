@@ -188,6 +188,26 @@ const SinglePageApp = () => {
         </div>
       </section>
 
+      {/* What We Do Section */}
+      <section className="py-16 md:py-20 bg-maroon-primary">
+        <div className="container mx-auto px-6">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-center mb-12 md:mb-16 tracking-wide text-white">
+            What We Do
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+            {whatWeDo.map((item, index) => (
+              <Card key={index} className="bg-white border-maroon-primary/20">
+                <CardContent className="p-6 md:p-8 text-center">
+                  <h3 className="font-serif text-lg md:text-xl font-bold mb-4 text-maroon-primary">{item.title}</h3>
+                  <p className="text-sm md:text-base leading-relaxed text-maroon-primary">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Mission Statement Section */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-6">
@@ -252,25 +272,6 @@ const SinglePageApp = () => {
         </div>
       </section>
 
-      {/* What We Do Section */}
-      <section className="py-16 md:py-20 bg-maroon-primary">
-        <div className="container mx-auto px-6">
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-center mb-12 md:mb-16 tracking-wide text-white">
-            What We Do
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
-            {whatWeDo.map((item, index) => (
-              <Card key={index} className="bg-white border-maroon-primary/20">
-                <CardContent className="p-6 md:p-8 text-center">
-                  <h3 className="font-serif text-lg md:text-xl font-bold mb-4 text-maroon-primary">{item.title}</h3>
-                  <p className="text-sm md:text-base leading-relaxed text-maroon-primary">{item.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Founder Section */}
       <section className="py-16 md:py-20">
