@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				serif: ['var(--font-serif)'],
+				sans: ['var(--font-sans)'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +65,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				'warm-beige': 'hsl(var(--warm-beige))',
+				'earth-brown': 'hsl(var(--earth-brown))',
+				'terracotta': 'hsl(var(--terracotta))',
+				'soft-cream': 'hsl(var(--soft-cream))',
+				'sage-green': 'hsl(var(--sage-green))',
+				'dusty-rose': 'hsl(var(--dusty-rose))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
