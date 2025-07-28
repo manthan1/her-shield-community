@@ -139,12 +139,12 @@ const Index = () => {
                   </div>
                   <div className="text-center lg:text-left">
                     <Quote className="h-8 w-8 mb-4 mx-auto lg:mx-0 opacity-80" />
-                    <blockquote className="font-serif text-xl lg:text-2xl italic mb-6 leading-relaxed">
+                    <blockquote className="font-serif text-xl lg:text-2xl italic mb-6 leading-relaxed text-orange-900">
                       "Every woman deserves a safe space to grow, dream, and thrive. HerShield exists to ensure that immigrant women not only survive but flourish in their new communities."
                     </blockquote>
                     <div>
-                      <p className="font-semibold text-lg">Shafoli Kapur</p>
-                      <p className="opacity-90">Founder & Executive Director</p>
+                      <p className="font-semibold text-lg text-orange-900">Shafoli Kapur</p>
+                      <p className="opacity-90 text-orange-900">Founder & Executive Director</p>
                     </div>
                   </div>
                 </div>
