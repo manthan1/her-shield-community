@@ -106,8 +106,8 @@ const Causes = () => {
         <section className="mb-20">
           <Card className="shadow-lifted bg-gradient-empowering text-white">
             <CardContent className="p-8 lg:p-12 text-center">
-              <Heart className="h-16 w-16 mx-auto mb-6 opacity-90" />
-              <h2 className="font-serif text-3xl font-bold mb-4">Featured Cause: Mental Health Access</h2>
+              <Heart className="h-16 w-16 mx-auto mb-6 opacity-90 text-primary" />
+              <h2 className="font-serif text-3xl font-bold mb-4 text-primary">Featured Cause: Mental Health Access</h2>
               <p className="text-xl leading-relaxed max-w-3xl mx-auto mb-8 text-muted-foreground">
                 This month, we're focusing on breaking down barriers to mental health care. 
                 Many immigrant women face unique challenges including trauma, cultural barriers, 
