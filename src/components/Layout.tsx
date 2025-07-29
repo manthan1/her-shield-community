@@ -28,15 +28,15 @@ const Layout = ({ children }: LayoutProps) => {
       {/* Header */}
       <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="grid grid-cols-3 items-center h-16 md:flex md:items-center md:justify-between">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-2 justify-self-start">
               <Heart className="h-8 w-8 text-accent" fill="currentColor" />
               <span className="font-serif text-2xl font-semibold text-primary">HerShield</span>
             </Link>
 
             {/* Desktop Navigation - Centered */}
-            <nav className="hidden md:flex items-center justify-center space-x-4 absolute left-1/2 transform -translate-x-1/2">
+            <nav className="hidden md:flex items-center justify-center space-x-4">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
@@ -50,26 +50,22 @@ const Layout = ({ children }: LayoutProps) => {
                   {item.name}
                 </Link>
               ))}
-            </nav>
-
-            {/* Donate Button and Mobile Menu */}
-            <div className="flex items-center space-x-4">
-              <Button asChild className="hidden md:block">
+              <Button asChild className="ml-4">
                 <Link to="/donate">Donate</Link>
               </Button>
-              
-              {/* Mobile menu button */}
-              <button
-                className="md:hidden p-2"
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              >
-                {isMobileMenuOpen ? (
-                  <X className="h-6 w-6" />
-                ) : (
-                  <Menu className="h-6 w-6" />
-                )}
-              </button>
-            </div>
+            </nav>
+
+            {/* Mobile menu button */}
+            <button
+              className="md:hidden p-2 justify-self-end"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
+            </button>
           </div>
 
           {/* Mobile Navigation */}
