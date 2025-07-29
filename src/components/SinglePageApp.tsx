@@ -75,7 +75,7 @@ const SinglePageApp = () => {
     <div className="min-h-screen bg-warm-beige">
       {/* Hero Section - Fully Responsive */}
       <section 
-        className="relative h-[70vh] flex flex-col justify-center items-center text-white"
+        className="relative min-h-screen flex flex-col justify-center items-center text-white"
         style={{
           backgroundImage: `url(${canvaHeroImage})`,
           backgroundSize: 'cover',
@@ -114,11 +114,11 @@ const SinglePageApp = () => {
           </h1>
         </div>
 
-        {/* Centered Tagline and HerShield Logo */}
+        {/* Tagline and HerShield Logo - Bottom positioning */}
         <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 lg:bottom-12 left-4 sm:left-6 md:left-8 lg:left-12 right-4 sm:right-6 md:right-8 lg:right-12">
-          <div className="flex flex-col items-center text-center gap-4">
-            {/* Centered Tagline */}
-            <div className="max-w-2xl">
+          <div className="flex flex-col lg:flex-row justify-between items-end gap-4 lg:gap-8">
+            {/* Tagline on the left */}
+            <div className="max-w-md lg:max-w-lg text-left">
               <h2 className="font-serif text-sm sm:text-base md:text-lg lg:text-xl font-normal mb-2 sm:mb-3 md:mb-4 tracking-wide text-warm-brown">
                 Elevating women through unity & support.
               </h2>
@@ -129,8 +129,8 @@ const SinglePageApp = () => {
               </p>
             </div>
             
-            {/* HerShield Logo centered below */}
-            <div className="flex flex-col items-center">
+            {/* HerShield Logo on the right */}
+            <div className="flex flex-col items-center flex-shrink-0">
               <img 
                 src={hershieldLogo} 
                 alt="HerShield Logo" 
