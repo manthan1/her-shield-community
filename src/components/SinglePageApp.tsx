@@ -273,28 +273,28 @@ const SinglePageApp = () => {
       {/* Founder Section */}
       <section className="min-h-screen flex items-center py-12 sm:py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6">
-          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-warm-brown text-center mb-8 sm:mb-12 md:mb-16">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-warm-brown text-center mb-8 sm:mb-12 md:mb-16">
             Founder of Hershield
           </h2>
           
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-12 items-center">
               <div className="lg:col-span-1">
                 <img 
                   src={founderImage} 
                   alt="Shafoli Kapur" 
-                  className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-3xl object-cover mx-auto"
+                  className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 xl:w-72 xl:h-72 rounded-3xl object-cover mx-auto"
                 />
               </div>
               <div className="lg:col-span-1">
                 <img 
                   src="/placeholder.svg" 
                   alt="Working" 
-                  className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-3xl object-cover mx-auto"
+                  className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 xl:w-72 xl:h-72 rounded-3xl object-cover mx-auto"
                 />
               </div>
               <div className="lg:col-span-1 text-center">
-                <p className="text-warm-brown text-xs sm:text-sm md:text-base">
+                <p className="text-warm-brown text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed">
                   A little biography about Shafoli Kapur.<br/>
                   blahblahblah
                 </p>
