@@ -186,7 +186,11 @@ const SinglePageApp = () => {
       {/* What We Do Section */}
       <section className="min-h-screen flex items-center py-12 sm:py-16 md:py-20 bg-crimson">
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="relative max-w-6xl mx-auto">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="font-heading text-3xl sm:text-4xl md:text-6xl lg:text-7xl tracking-wide text-white text-center mb-8 sm:mb-12 md:mb-16">
+              What We Do
+            </h2>
+            
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
               {whatWeDo.map((item, index) => (
                 <Card key={index} className="bg-white border-warm-brown/20 min-h-[300px] sm:min-h-[350px] md:min-h-[400px]">
@@ -196,13 +200,6 @@ const SinglePageApp = () => {
                   </CardContent>
                 </Card>
               ))}
-            </div>
-            
-            {/* Title positioned on the right border of the third card */}
-            <div className="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-4">
-              <h2 className="font-heading text-3xl sm:text-4xl md:text-6xl lg:text-7xl tracking-wide text-white writing-mode-vertical transform rotate-90 origin-center whitespace-nowrap">
-                What We Do
-              </h2>
             </div>
           </div>
         </div>
