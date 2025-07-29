@@ -19,8 +19,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				heading: ['var(--font-heading)'],
-				body: ['var(--font-body)'],
+				serif: ['var(--font-serif)'],
+				sans: ['var(--font-sans)'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -66,11 +66,12 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				'crimson': 'hsl(var(--crimson))',
-				'light-peach': 'hsl(var(--light-peach))',
-				'soft-beige': 'hsl(var(--soft-beige))',
-				'text-crimson': 'hsl(var(--text-crimson))',
-				'overlay-dark': 'hsl(var(--overlay-dark))'
+				'warm-beige': 'hsl(var(--warm-beige))',
+				'warm-brown': 'hsl(var(--warm-brown))',
+				'tan-brown': 'hsl(var(--tan-brown))',
+				'button-brown': 'hsl(var(--button-brown))',
+				'cream': 'hsl(var(--cream))',
+				'text-dark': 'hsl(var(--text-dark))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

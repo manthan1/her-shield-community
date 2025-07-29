@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ovo:wght@400&family=Tan+Mon+Cheri:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,49 +8,54 @@
 
 @layer base {
   :root {
-    /* New color scheme matching the Canva design */
-    --background: 25 15% 96%; /* Light background */
-    --foreground: 345 55% 25%; /* Dark crimson text */
+    /* HerShield brand colors matching the Canva design exactly */
+    --background: 35 30% 92%; /* Warm beige background matching Canva */
+    --foreground: 25 35% 40%; /* Warm brown text */
 
-    --card: 25 15% 98%; /* Card background */
-    --card-foreground: 345 55% 25%;
+    --card: 35 30% 95%; /* Lighter card background */
+    --card-foreground: 25 35% 40%;
 
-    --popover: 25 15% 98%;
-    --popover-foreground: 345 55% 25%;
+    --popover: 35 30% 95%;
+    --popover-foreground: 25 35% 40%;
 
-    /* Primary crimson color from Canva (#792836) */
-    --primary: 345 55% 32%; /* Crimson */
-    --primary-foreground: 25 15% 96%;
+    /* Primary brand color - warm brown from Canva design */
+    --primary: 25 35% 40%; /* Warm brown */
+    --primary-foreground: 35 30% 95%;
 
-    --secondary: 25 15% 92%; /* Light background variant */
-    --secondary-foreground: 345 55% 25%;
+    --secondary: 35 30% 88%; /* Light warm beige */
+    --secondary-foreground: 25 35% 40%;
 
-    --muted: 25 10% 90%; 
-    --muted-foreground: 345 25% 45%;
+    --muted: 35 25% 85%; 
+    --muted-foreground: 25 25% 50%;
 
-    /* Accent color - light peach (#F9E5DA) */
-    --accent: 25 65% 92%; /* Light peach for buttons */
-    --accent-foreground: 345 55% 25%;
+    /* Accent color matching the tan buttons in Canva */
+    --accent: 30 40% 65%; /* Tan color for buttons */
+    --accent-foreground: 25 35% 40%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 25 15% 96%;
+    --destructive-foreground: 35 30% 95%;
 
-    --border: 25 15% 85%;
-    --input: 25 15% 95%;
-    --ring: 345 55% 32%;
+    --border: 35 25% 80%;
+    --input: 35 25% 88%;
+    --ring: 30 40% 65%;
 
-    --radius: 1rem;
+    --radius: 0.75rem;
 
-    /* Custom colors matching Canva design */
-    --crimson: 345 55% 32%; /* #792836 */
-    --light-peach: 25 65% 92%; /* #F9E5DA */
-    --soft-beige: 25 25% 90%;
-    --text-crimson: 345 55% 25%;
-    --overlay-dark: 0 0% 0%;
+    /* Custom HerShield colors matching Canva design exactly */
+    --warm-beige: 35 30% 92%; /* Main background */
+    --warm-brown: 25 35% 40%; /* Main text color */
+    --tan-brown: 30 40% 65%; /* Button color from Canva */
+    --button-brown: 25 50% 55%; /* Darker brown for buttons */
+    --cream: 35 30% 95%;
+    --text-dark: 25 35% 40%;
 
-    /* Typography matching Canva fonts */
-    --font-heading: 'Tan Mon Cheri', serif;
-    --font-body: 'Ovo', serif;
+    /* Gradients matching the design */
+    --gradient-hero: linear-gradient(135deg, rgba(139, 69, 19, 0.7), rgba(160, 82, 45, 0.5));
+    --gradient-maroon: linear-gradient(135deg, hsl(344 35% 35%), hsl(344 45% 55%));
+
+    /* Typography matching design */
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Lato', sans-serif;
 
     --sidebar-background: 0 0% 98%;
 
@@ -114,20 +119,20 @@
   }
 
   body {
-    @apply bg-background text-foreground font-body;
+    @apply bg-background text-foreground font-sans;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading);
+    font-family: var(--font-serif);
     @apply text-foreground;
   }
 
-  .font-heading {
-    font-family: var(--font-heading);
+  .font-serif {
+    font-family: var(--font-serif);
   }
 
-  .font-body {
-    font-family: var(--font-body);
+  .font-sans {
+    font-family: var(--font-sans);
   }
 
   .gradient-warm {
