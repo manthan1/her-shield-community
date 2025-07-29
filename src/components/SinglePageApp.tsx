@@ -126,15 +126,6 @@ const SinglePageApp = () => {
       HerShield is a nonprofit movement creating safe, empowering spaces for 
       immigrant women to be seen, heard, and supported.
     </p>
-    {/* Logo moved to right side */}
-    <div className="absolute right-4 sm:right-6 md:right-8 top-1/2 transform -translate-y-1/2 flex flex-col items-center">
-      <img 
-        src={hershieldLogo} 
-        alt="HerShield Logo" 
-        className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 mb-1 sm:mb-2"
-      />
-      <span className="text-xs sm:text-sm font-bold text-warm-brown">HerShield</span>
-    </div>
   </div>
 </section>
 
