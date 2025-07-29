@@ -74,11 +74,10 @@ const SinglePageApp = () => {
   return (
     <div className="min-h-screen bg-warm-beige">
       {/* Hero Section - Fully Responsive */}
-      {/* Hero Section - 80-20 Split */}
-<section className="relative min-h-screen flex">
-  {/* 80% Image Background */}
+      <section className="relative min-h-screen flex flex-col">
+  {/* 80% Top Image Background Section */}
   <div
-    className="w-4/5 flex flex-col justify-center items-center text-white"
+    className="h-4/5 flex flex-col justify-center items-center text-white relative"
     style={{
       backgroundImage: `url(${canvaHeroImage})`,
       backgroundSize: 'cover',
@@ -118,12 +117,12 @@ const SinglePageApp = () => {
     </div>
   </div>
 
-  {/* 20% Solid Color Section with Text */}
-  <div className="w-1/5 bg-[#EADBC8] flex flex-col justify-center items-center px-4 sm:px-6 text-center">
+  {/* 20% Bottom Solid Color Section with Text */}
+  <div className="h-1/5 bg-[#EADBC8] flex flex-col justify-center items-center px-4 sm:px-6 text-center">
     <h2 className="font-serif text-sm sm:text-base md:text-lg lg:text-xl font-normal mb-2 sm:mb-3 md:mb-4 tracking-wide text-warm-brown">
       Elevating women through unity & support.
     </h2>
-    <p className="font-sans text-xs sm:text-sm md:text-base leading-relaxed text-warm-brown">
+    <p className="font-sans text-xs sm:text-sm md:text-base leading-relaxed text-warm-brown max-w-2xl">
       HerShield is a nonprofit movement creating safe, empowering spaces for 
       immigrant women to be seen, heard, and supported.
     </p>
