@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -9,13 +10,17 @@ import {
   Scale, 
   Users,
   Mail,
-  Phone
+  Phone,
+  Menu,
+  X
 } from 'lucide-react';
 import canvaHeroImage from '@/assets/canva-hero-background.png';
 import hershieldLogo from '@/assets/hershield-logo.png';
 import founderImage from '@/assets/founder-shafoli.jpg';
 
 const SinglePageApp = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const causes = [
     {
       icon: Briefcase,
@@ -85,23 +90,68 @@ const SinglePageApp = () => {
       backgroundRepeat: 'no-repeat'
     }}
   >
-    {/* Navigation Buttons */}
-    <div className="absolute top-4 sm:top-6 md:top-8 left-1/2 transform -translate-x-1/2 w-full flex justify-center px-4 z-10">
-      <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 md:gap-6 items-center">
+    {/* Mobile Hamburger Menu Button - Top Right */}
+    <div className="absolute top-4 right-4 sm:hidden z-20">
+      <Button
+        className="bg-tan-brown hover:bg-button-brown text-white p-2 rounded-full border-none shadow-lg"
+        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+      >
+        {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+      </Button>
+    </div>
+
+    {/* Mobile Menu Overlay */}
+    {isMobileMenuOpen && (
+      <div className="absolute top-0 left-0 w-full h-full bg-black/80 z-15 sm:hidden">
+        <div className="flex flex-col items-center justify-center h-full gap-4">
+          <Button 
+            className="bg-tan-brown hover:bg-button-brown text-white px-10 py-4 rounded-full text-base font-medium border-none shadow-lg w-48"
+            onClick={() => {
+              setIsMobileMenuOpen(false);
+              window.location.href = '#donate';
+            }}
+          >
+            DONATE
+          </Button>
+          <Button 
+            className="bg-tan-brown hover:bg-button-brown text-white px-10 py-4 rounded-full text-base font-medium border-none shadow-lg w-48"
+            onClick={() => {
+              setIsMobileMenuOpen(false);
+              window.location.href = '#contact';
+            }}
+          >
+            JOIN US
+          </Button>
+          <Button 
+            className="bg-tan-brown hover:bg-button-brown text-white px-10 py-4 rounded-full text-base font-medium border-none shadow-lg w-48"
+            onClick={() => {
+              setIsMobileMenuOpen(false);
+              window.location.href = '#impact';
+            }}
+          >
+            EVENTS
+          </Button>
+        </div>
+      </div>
+    )}
+
+    {/* Desktop Navigation Buttons - Hidden on Mobile */}
+    <div className="absolute top-4 sm:top-6 md:top-8 left-1/2 transform -translate-x-1/2 w-full justify-center px-4 z-10 hidden sm:flex">
+      <div className="flex flex-row gap-4 md:gap-6 items-center">
         <Button 
-          className="bg-tan-brown hover:bg-button-brown text-white px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-xs sm:text-sm md:text-base font-medium border-none shadow-lg w-full sm:w-auto min-w-[120px] sm:min-w-[140px]"
+          className="bg-tan-brown hover:bg-button-brown text-white px-6 md:px-10 py-3 md:py-4 rounded-full text-sm md:text-base font-medium border-none shadow-lg min-w-[140px]"
           onClick={() => window.location.href = '#donate'}
         >
           DONATE
         </Button>
         <Button 
-          className="bg-tan-brown hover:bg-button-brown text-white px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-xs sm:text-sm md:text-base font-medium border-none shadow-lg w-full sm:w-auto min-w-[120px] sm:min-w-[140px]"
+          className="bg-tan-brown hover:bg-button-brown text-white px-6 md:px-10 py-3 md:py-4 rounded-full text-sm md:text-base font-medium border-none shadow-lg min-w-[140px]"
           onClick={() => window.location.href = '#contact'}
         >
           JOIN US
         </Button>
         <Button 
-          className="bg-tan-brown hover:bg-button-brown text-white px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-xs sm:text-sm md:text-base font-medium border-none shadow-lg w-full sm:w-auto min-w-[120px] sm:min-w-[140px]"
+          className="bg-tan-brown hover:bg-button-brown text-white px-6 md:px-10 py-3 md:py-4 rounded-full text-sm md:text-base font-medium border-none shadow-lg min-w-[140px]"
           onClick={() => window.location.href = '#impact'}
         >
           EVENTS
