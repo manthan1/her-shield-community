@@ -74,7 +74,7 @@ const SinglePageApp = () => {
   return (
     <div className="min-h-screen bg-warm-beige">
       {/* Hero Section - Fully Responsive */}
-      <section className="relative min-h-screen flex flex-col">
+      <section className="relative h-screen flex flex-col">
   {/* 80% Top Image Background Section */}
   <div
     className="h-4/5 flex flex-col justify-center items-center text-white relative"
