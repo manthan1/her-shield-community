@@ -9,13 +9,17 @@ import {
   Scale, 
   Users,
   Mail,
-  Phone
+  Phone,
+  Menu,
+  X
 } from 'lucide-react';
+import { useState } from 'react';
 import canvaHeroImage from '@/assets/canva-hero-background.png';
 import hershieldLogo from '@/assets/hershield-logo.png';
 import founderImage from '@/assets/founder-shafoli.jpg';
 
 const SinglePageApp = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const causes = [
     {
       icon: Briefcase,
@@ -85,29 +89,74 @@ const SinglePageApp = () => {
       backgroundRepeat: 'no-repeat'
     }}
   >
-    {/* Navigation Buttons */}
-    <div className="absolute top-4 sm:top-6 md:top-8 left-1/2 transform -translate-x-1/2 w-full flex justify-center px-4 z-10">
-      <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 md:gap-6 items-center">
+    {/* Desktop Navigation Buttons */}
+    <div className="absolute top-4 sm:top-6 md:top-8 left-1/2 transform -translate-x-1/2 w-full justify-center px-4 z-10 hidden sm:flex">
+      <div className="flex flex-row gap-4 md:gap-6 items-center">
         <Button 
-          className="bg-tan-brown hover:bg-button-brown text-white px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-xs sm:text-sm md:text-base font-medium border-none shadow-lg w-full sm:w-auto min-w-[120px] sm:min-w-[140px]"
+          className="bg-tan-brown hover:bg-button-brown text-white px-6 md:px-10 py-3 md:py-4 rounded-full text-sm md:text-base font-medium border-none shadow-lg min-w-[140px]"
           onClick={() => window.location.href = '#donate'}
         >
           DONATE
         </Button>
         <Button 
-          className="bg-tan-brown hover:bg-button-brown text-white px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-xs sm:text-sm md:text-base font-medium border-none shadow-lg w-full sm:w-auto min-w-[120px] sm:min-w-[140px]"
+          className="bg-tan-brown hover:bg-button-brown text-white px-6 md:px-10 py-3 md:py-4 rounded-full text-sm md:text-base font-medium border-none shadow-lg min-w-[140px]"
           onClick={() => window.location.href = '#contact'}
         >
           JOIN US
         </Button>
         <Button 
-          className="bg-tan-brown hover:bg-button-brown text-white px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-xs sm:text-sm md:text-base font-medium border-none shadow-lg w-full sm:w-auto min-w-[120px] sm:min-w-[140px]"
+          className="bg-tan-brown hover:bg-button-brown text-white px-6 md:px-10 py-3 md:py-4 rounded-full text-sm md:text-base font-medium border-none shadow-lg min-w-[140px]"
           onClick={() => window.location.href = '#impact'}
         >
           EVENTS
         </Button>
       </div>
     </div>
+
+    {/* Mobile Hamburger Menu */}
+    <div className="absolute top-4 right-4 z-20 sm:hidden">
+      <Button 
+        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        className="bg-tan-brown hover:bg-button-brown text-white p-2 rounded-lg border-none shadow-lg"
+      >
+        {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+      </Button>
+    </div>
+
+    {/* Mobile Menu Dropdown */}
+    {isMobileMenuOpen && (
+      <div className="absolute top-16 right-4 bg-tan-brown rounded-lg shadow-lg z-10 sm:hidden">
+        <div className="flex flex-col p-2 space-y-2">
+          <Button 
+            className="bg-transparent hover:bg-button-brown text-white px-4 py-2 text-sm font-medium border-none"
+            onClick={() => {
+              window.location.href = '#donate';
+              setIsMobileMenuOpen(false);
+            }}
+          >
+            DONATE
+          </Button>
+          <Button 
+            className="bg-transparent hover:bg-button-brown text-white px-4 py-2 text-sm font-medium border-none"
+            onClick={() => {
+              window.location.href = '#contact';
+              setIsMobileMenuOpen(false);
+            }}
+          >
+            JOIN US
+          </Button>
+          <Button 
+            className="bg-transparent hover:bg-button-brown text-white px-4 py-2 text-sm font-medium border-none"
+            onClick={() => {
+              window.location.href = '#impact';
+              setIsMobileMenuOpen(false);
+            }}
+          >
+            EVENTS
+          </Button>
+        </div>
+      </div>
+    )}
 
     {/* Title in Image Section */}
     <div className="text-center max-w-6xl px-4 sm:px-6">
