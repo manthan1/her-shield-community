@@ -67,8 +67,9 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				'warm-beige': 'hsl(var(--warm-beige))',
-				'maroon-primary': 'hsl(var(--maroon-primary))',
-				'maroon-light': 'hsl(var(--maroon-light))',
+				'warm-brown': 'hsl(var(--warm-brown))',
+				'tan-brown': 'hsl(var(--tan-brown))',
+				'button-brown': 'hsl(var(--button-brown))',
 				'cream': 'hsl(var(--cream))',
 				'text-dark': 'hsl(var(--text-dark))'
 			},

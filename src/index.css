@@ -8,44 +8,46 @@
 
 @layer base {
   :root {
-    /* HerShield brand colors matching the design */
-    --background: 28 25% 90%; /* Light beige background */
-    --foreground: 344 35% 35%; /* Dark maroon text */
+    /* HerShield brand colors matching the Canva design exactly */
+    --background: 35 30% 92%; /* Warm beige background matching Canva */
+    --foreground: 25 35% 40%; /* Warm brown text */
 
-    --card: 28 25% 95%; /* Lighter card background */
-    --card-foreground: 344 35% 35%;
+    --card: 35 30% 95%; /* Lighter card background */
+    --card-foreground: 25 35% 40%;
 
-    --popover: 28 25% 95%;
-    --popover-foreground: 344 35% 35%;
+    --popover: 35 30% 95%;
+    --popover-foreground: 25 35% 40%;
 
-    /* Primary brand color - maroon/burgundy */
-    --primary: 344 35% 35%; /* Deep maroon */
-    --primary-foreground: 28 25% 95%;
+    /* Primary brand color - warm brown from Canva design */
+    --primary: 25 35% 40%; /* Warm brown */
+    --primary-foreground: 35 30% 95%;
 
-    --secondary: 28 25% 85%; /* Light beige */
-    --secondary-foreground: 344 35% 35%;
+    --secondary: 35 30% 88%; /* Light warm beige */
+    --secondary-foreground: 25 35% 40%;
 
-    --muted: 28 20% 88%; 
-    --muted-foreground: 344 20% 50%;
+    --muted: 35 25% 85%; 
+    --muted-foreground: 25 25% 50%;
 
-    --accent: 344 45% 55%; /* Lighter maroon accent */
-    --accent-foreground: 28 25% 95%;
+    /* Accent color matching the tan buttons in Canva */
+    --accent: 30 40% 65%; /* Tan color for buttons */
+    --accent-foreground: 25 35% 40%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 28 25% 95%;
+    --destructive-foreground: 35 30% 95%;
 
-    --border: 28 20% 80%;
-    --input: 28 20% 88%;
-    --ring: 344 45% 55%;
+    --border: 35 25% 80%;
+    --input: 35 25% 88%;
+    --ring: 30 40% 65%;
 
     --radius: 0.75rem;
 
-    /* Custom HerShield colors from design */
-    --warm-beige: 28 25% 90%;
-    --maroon-primary: 344 35% 35%;
-    --maroon-light: 344 45% 55%;
-    --cream: 28 25% 95%;
-    --text-dark: 344 35% 35%;
+    /* Custom HerShield colors matching Canva design exactly */
+    --warm-beige: 35 30% 92%; /* Main background */
+    --warm-brown: 25 35% 40%; /* Main text color */
+    --tan-brown: 30 40% 65%; /* Button color from Canva */
+    --button-brown: 25 50% 55%; /* Darker brown for buttons */
+    --cream: 35 30% 95%;
+    --text-dark: 25 35% 40%;
 
     /* Gradients matching the design */
     --gradient-hero: linear-gradient(135deg, rgba(139, 69, 19, 0.7), rgba(160, 82, 45, 0.5));
