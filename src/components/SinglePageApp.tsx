@@ -118,16 +118,16 @@ const SinglePageApp = () => {
   </div>
 
   {/* 20% Bottom Solid Color Section with Text */}
-  <div className="h-1/5 bg-[#EADBC8] flex flex-col justify-center items-center px-4 sm:px-6 text-center">
-    <h2 className="font-serif text-sm sm:text-base md:text-lg lg:text-xl font-normal mb-2 sm:mb-3 md:mb-4 tracking-wide text-warm-brown">
+  <div className="h-1/5 bg-[#EADBC8] flex flex-col justify-center items-center px-4 sm:px-6 text-center relative">
+    <h2 className="font-subtitle text-sm sm:text-base md:text-lg lg:text-xl font-normal mb-2 sm:mb-3 md:mb-4 tracking-wide text-warm-brown">
       Elevating women through unity & support.
     </h2>
-    <p className="font-sans text-xs sm:text-sm md:text-base leading-relaxed text-warm-brown max-w-2xl">
+    <p className="font-subtitle text-xs sm:text-sm md:text-base leading-relaxed text-warm-brown max-w-2xl">
       HerShield is a nonprofit movement creating safe, empowering spaces for 
       immigrant women to be seen, heard, and supported.
     </p>
-    {/* Logo Optional */}
-    <div className="mt-4 flex flex-col items-center">
+    {/* Logo moved to right side */}
+    <div className="absolute right-4 sm:right-6 md:right-8 top-1/2 transform -translate-y-1/2 flex flex-col items-center">
       <img 
         src={hershieldLogo} 
         alt="HerShield Logo" 
