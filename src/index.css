@@ -48,6 +48,7 @@
     --button-brown: 25 50% 55%; /* Darker brown for buttons */
     --cream: 35 30% 95%;
     --text-dark: 25 35% 40%;
+    --crimson: 344 64% 35%; /* Crimson #792836 */
 
     /* Gradients matching the design */
     --gradient-hero: linear-gradient(135deg, rgba(139, 69, 19, 0.7), rgba(160, 82, 45, 0.5));
@@ -56,6 +57,8 @@
     /* Typography matching design */
     --font-serif: 'Playfair Display', serif;
     --font-sans: 'Lato', sans-serif;
+    --font-heading: 'Tan Mon Cheri', serif;
+    --font-subtitle: 'Ovo', serif;
 
     --sidebar-background: 0 0% 98%;
 

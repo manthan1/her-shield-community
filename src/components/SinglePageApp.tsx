@@ -192,9 +192,9 @@ const SinglePageApp = () => {
       </section>
 
       {/* What We Do Section */}
-      <section className="py-16 md:py-20 bg-warm-brown">
+      <section className="py-16 md:py-20 bg-crimson">
         <div className="container mx-auto px-6">
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-center mb-12 md:mb-16 tracking-wide text-white">
+          <h2 className="font-heading text-6xl md:text-7xl text-center mb-12 md:mb-16 tracking-wide text-white">
             What We Do
           </h2>
           
@@ -252,7 +252,7 @@ const SinglePageApp = () => {
       </section>
 
       {/* Our Causes Section */}
-      <section className="py-16 md:py-20 bg-warm-brown">
+      <section className="py-16 md:py-20 bg-crimson">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
             <div>
@@ -267,7 +267,7 @@ const SinglePageApp = () => {
             </div>
             
             <div className="text-center lg:text-right">
-              <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl font-normal tracking-wide text-white">
+              <h2 className="font-heading text-6xl md:text-7xl font-normal tracking-wide text-white">
                 OUR<br/>CAUSES
               </h2>
             </div>
@@ -334,11 +334,11 @@ const SinglePageApp = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 md:py-20 bg-warm-brown">
+      <section id="contact" className="py-16 md:py-20 bg-crimson">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16">
             <div>
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl mb-6 md:mb-8 text-white">Contact us</h2>
+              <h2 className="font-heading text-6xl md:text-7xl mb-6 md:mb-8 text-white">Contact us</h2>
               
               <div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
                 <p className="text-base md:text-lg text-white">Heritage Artes Society</p>
@@ -355,7 +355,7 @@ const SinglePageApp = () => {
             <div id="donate">
               <Card className="bg-white border-warm-brown/20">
                 <CardContent className="p-6 md:p-8">
-                  <h3 className="font-serif text-xl md:text-2xl mb-4 md:mb-6 text-warm-brown">Join Our Mailing List</h3>
+                  <h3 className="font-subtitle text-4xl mb-4 md:mb-6 text-warm-brown">Join Our Mailing List</h3>
                   
                   <div className="space-y-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

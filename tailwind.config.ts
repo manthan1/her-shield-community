@@ -21,6 +21,8 @@ export default {
 			fontFamily: {
 				serif: ['var(--font-serif)'],
 				sans: ['var(--font-sans)'],
+				heading: ['var(--font-heading)'],
+				subtitle: ['var(--font-subtitle)'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -71,7 +73,8 @@ export default {
 				'tan-brown': 'hsl(var(--tan-brown))',
 				'button-brown': 'hsl(var(--button-brown))',
 				'cream': 'hsl(var(--cream))',
-				'text-dark': 'hsl(var(--text-dark))'
+				'text-dark': 'hsl(var(--text-dark))',
+				'crimson': 'hsl(var(--crimson))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
