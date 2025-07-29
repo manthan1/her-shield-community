@@ -236,7 +236,7 @@ const SinglePageApp = () => {
       <section className="min-h-screen flex items-center py-12 sm:py-16 md:py-20 bg-crimson">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-6xl mx-auto">
-            <h2 className="font-heading text-3xl sm:text-4xl md:text-6xl lg:text-7xl tracking-wide text-white text-right mb-8 sm:mb-12 md:mb-16">
+            <h2 className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-wide text-white text-right mb-8 sm:mb-12 md:mb-16">
               What We Do
             </h2>
             
@@ -244,8 +244,8 @@ const SinglePageApp = () => {
               {whatWeDo.map((item, index) => (
                 <Card key={index} className="bg-white border-warm-brown/20 min-h-[300px] sm:min-h-[350px] md:min-h-[400px]">
                   <CardContent className="p-4 sm:p-6 md:p-8 text-center h-full flex flex-col justify-center">
-                    <h3 className="font-serif text-base sm:text-lg md:text-xl font-bold mb-3 sm:mb-4 text-warm-brown">{item.title}</h3>
-                    <p className="text-xs sm:text-sm md:text-base leading-relaxed text-warm-brown">{item.description}</p>
+                    <h3 className="font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-warm-brown">{item.title}</h3>
+                    <p className="font-heading text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed text-warm-brown">{item.description}</p>
                   </CardContent>
                 </Card>
               ))}
