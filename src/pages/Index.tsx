@@ -11,7 +11,7 @@ const Index = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-center" style={{color: '#72523B'}}>
+              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-center">
                 Elevating women through unity and support
               </h1>
               <p className="text-xl leading-relaxed text-center text-primary">
