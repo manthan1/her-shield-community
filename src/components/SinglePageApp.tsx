@@ -109,34 +109,26 @@ const SinglePageApp = () => {
 
         {/* Hero Content - Responsive typography */}
         <div className="text-center max-w-6xl px-4 sm:px-6">
-          <h1 
-            className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-light tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.2em] mb-6 sm:mb-8 md:mb-12 text-transparent bg-clip-text border-4 border-purple-500 p-4 inline-block"
-            style={{
-              backgroundImage: `url(${canvaHeroImage})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat'
-            }}
-          >
+                    <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-light tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.2em] mb-6 sm:mb-8 md:mb-12 text-white">
+
             HERSHIELD
-          </h1>
+                    </h1>
+          
         </div>
 
         {/* Tagline and HerShield Logo - Bottom positioning */}
         <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 lg:bottom-12 left-4 sm:left-6 md:left-8 lg:left-12 right-4 sm:right-6 md:right-8 lg:right-12">
-          <div className="flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-8">
-            {/* Tagline in center with background */}
-            <div className="flex-1 text-center">
-              <div className="bg-warm-brown/80 backdrop-blur-sm rounded-lg p-4 sm:p-6 md:p-8 max-w-2xl mx-auto">
-                <h2 className="font-serif text-sm sm:text-base md:text-lg lg:text-xl font-normal mb-2 sm:mb-3 md:mb-4 tracking-wide text-white">
-                  Elevating women through unity & support.
-                </h2>
-                
-                <p className="font-sans text-xs sm:text-sm md:text-base leading-relaxed text-white">
-                  HerShield is a nonprofit movement creating safe, empowering spaces for 
-                  immigrant women to be seen, heard, and supported.
-                </p>
-              </div>
+          <div className="flex flex-col lg:flex-row justify-between items-end gap-4 lg:gap-8">
+            {/* Tagline on the left */}
+            <div className="max-w-md lg:max-w-lg text-left">
+              <h2 className="font-serif text-sm sm:text-base md:text-lg lg:text-xl font-normal mb-2 sm:mb-3 md:mb-4 tracking-wide text-warm-brown">
+                Elevating women through unity & support.
+              </h2>
+              
+              <p className="font-sans text-xs sm:text-sm md:text-base leading-relaxed text-warm-brown">
+                HerShield is a nonprofit movement creating safe, empowering spaces for 
+                immigrant women to be seen, heard, and supported.
+              </p>
             </div>
             
             {/* HerShield Logo on the right */}
