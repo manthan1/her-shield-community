@@ -135,8 +135,8 @@ const SinglePageApp = () => {
                 src={hershieldLogo} 
                 alt="HerShield Logo" 
                 className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 mb-1 sm:mb-2"
-              /> */}
-              {/* <span className="text-xs sm:text-sm font-bold text-white">HerShield</span> */}
+              />
+              <span className="text-xs sm:text-sm font-bold text-white">HerShield</span> */}
             </div>
           </div>
         </div>
