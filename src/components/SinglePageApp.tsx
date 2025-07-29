@@ -123,7 +123,7 @@ const SinglePageApp = () => {
                 Elevating women through unity & support.
               </h2>
               
-              <p className="font-sans text-xs sm:text-sm md:text-base leading-relaxed text-white">
+              <p className="font-sans text-xs sm:text-sm md:text-base leading-relaxed text-warm-brown">
                 HerShield is a nonprofit movement creating safe, empowering spaces for 
                 immigrant women to be seen, heard, and supported.
               </p>
