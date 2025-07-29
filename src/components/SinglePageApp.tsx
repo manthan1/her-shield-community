@@ -236,25 +236,19 @@ const SinglePageApp = () => {
       {/* What We Do Section */}
       <section className="min-h-screen flex items-center py-12 sm:py-16 md:py-20 bg-crimson">
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 md:gap-16 items-center">
-            {/* Cards on the left */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 md:gap-10 flex-1">
-              {whatWeDo.map((item, index) => (
-                <Card key={index} className="bg-white/10 border-white/30 backdrop-blur-sm min-h-[280px] sm:min-h-[320px] md:min-h-[360px]">
-                  <CardContent className="p-6 sm:p-8 md:p-10 text-center h-full flex flex-col justify-center">
-                    <h3 className="font-heading text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-white">{item.title}</h3>
-                    <p className="text-base sm:text-lg md:text-xl leading-relaxed text-white/90">{item.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-            
-            {/* Title on the right */}
-            <div className="text-center lg:text-right lg:flex-shrink-0">
-              <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-normal tracking-wide text-white leading-tight">
-                What We Do
-              </h2>
-            </div>
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-center mb-8 sm:mb-12 md:mb-16 tracking-wide text-white">
+            What We Do
+          </h2>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-6xl mx-auto">
+            {whatWeDo.map((item, index) => (
+              <Card key={index} className="bg-white border-warm-brown/20">
+                <CardContent className="p-4 sm:p-6 md:p-8 text-center">
+                  <h3 className="font-serif text-base sm:text-lg md:text-xl font-bold mb-3 sm:mb-4 text-warm-brown">{item.title}</h3>
+                  <p className="text-xs sm:text-sm md:text-base leading-relaxed text-warm-brown">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -327,28 +321,28 @@ const SinglePageApp = () => {
       {/* Founder Section */}
       <section className="min-h-screen flex items-center py-12 sm:py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6">
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-warm-brown text-center mb-8 sm:mb-12 md:mb-16">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-warm-brown text-center mb-8 sm:mb-12 md:mb-16">
             Founder of Hershield
           </h2>
           
-          <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-12 items-center">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center">
               <div className="lg:col-span-1">
                 <img 
                   src={founderImage} 
                   alt="Shafoli Kapur" 
-                  className="w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-3xl object-cover mx-auto"
+                  className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-3xl object-cover mx-auto"
                 />
               </div>
               <div className="lg:col-span-1">
                 <img 
                   src="/placeholder.svg" 
                   alt="Working" 
-                  className="w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-3xl object-cover mx-auto"
+                  className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-3xl object-cover mx-auto"
                 />
               </div>
               <div className="lg:col-span-1 text-center">
-                <p className="text-warm-brown text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed">
+                <p className="text-warm-brown text-xs sm:text-sm md:text-base">
                   A little biography about Shafoli Kapur.<br/>
                   blahblahblah
                 </p>
