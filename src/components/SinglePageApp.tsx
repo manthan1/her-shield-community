@@ -236,19 +236,23 @@ const SinglePageApp = () => {
       {/* What We Do Section */}
       <section className="min-h-screen flex items-center py-12 sm:py-16 md:py-20 bg-crimson">
         <div className="container mx-auto px-4 sm:px-6">
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-center mb-8 sm:mb-12 md:mb-16 tracking-wide text-white">
-            What We Do
-          </h2>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-6xl mx-auto">
-            {whatWeDo.map((item, index) => (
-              <Card key={index} className="bg-white border-warm-brown/20">
-                <CardContent className="p-4 sm:p-6 md:p-8 text-center">
-                  <h3 className="font-serif text-base sm:text-lg md:text-xl font-bold mb-3 sm:mb-4 text-warm-brown">{item.title}</h3>
-                  <p className="text-xs sm:text-sm md:text-base leading-relaxed text-warm-brown">{item.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16 items-center">
+            <div className="grid grid-cols-1 gap-6 sm:gap-8 md:gap-10">
+              {whatWeDo.map((item, index) => (
+                <Card key={index} className="bg-white border-warm-brown/20 min-h-[200px] sm:min-h-[220px] md:min-h-[240px]">
+                  <CardContent className="p-6 sm:p-8 md:p-10 text-center h-full flex flex-col justify-center">
+                    <h3 className="font-heading text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-warm-brown">{item.title}</h3>
+                    <p className="text-base sm:text-lg md:text-xl leading-relaxed text-warm-brown">{item.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+            
+            <div className="text-center lg:text-right">
+              <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-normal tracking-wide text-white">
+                What We Do
+              </h2>
+            </div>
           </div>
         </div>
       </section>
@@ -321,7 +325,7 @@ const SinglePageApp = () => {
       {/* Founder Section */}
       <section className="min-h-screen flex items-center py-12 sm:py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6">
-          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-warm-brown text-center mb-8 sm:mb-12 md:mb-16">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-warm-brown text-center mb-8 sm:mb-12 md:mb-16">
             Founder of Hershield
           </h2>
           
