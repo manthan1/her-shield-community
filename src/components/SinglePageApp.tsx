@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -10,17 +9,13 @@ import {
   Scale, 
   Users,
   Mail,
-  Phone,
-  Menu,
-  X
+  Phone
 } from 'lucide-react';
 import canvaHeroImage from '@/assets/canva-hero-background.png';
 import hershieldLogo from '@/assets/hershield-logo.png';
 import founderImage from '@/assets/founder-shafoli.jpg';
 
 const SinglePageApp = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   const causes = [
     {
       icon: Briefcase,
@@ -79,106 +74,73 @@ const SinglePageApp = () => {
   return (
     <div className="min-h-screen bg-warm-beige">
       {/* Hero Section - Fully Responsive */}
-      <section className="relative h-screen flex flex-col">
-  {/* 70% Top Image Background Section */}
-  <div
-    className="h-[70%] flex flex-col justify-center items-center text-white relative"
-    style={{
-      backgroundImage: `url(${canvaHeroImage})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat'
-    }}
-  >
-    {/* Mobile Hamburger Menu Button - Top Right */}
-    <div className="absolute top-4 right-4 sm:hidden z-20">
-      <Button
-        className="bg-tan-brown hover:bg-button-brown text-white p-2 rounded-full border-none shadow-lg"
-        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+      <section 
+        className="relative min-h-screen flex flex-col justify-center items-center text-white"
+        style={{
+          backgroundImage: `url(${canvaHeroImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
       >
-        {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-      </Button>
-    </div>
-
-    {/* Mobile Menu Overlay */}
-    {isMobileMenuOpen && (
-      <div className="absolute top-0 left-0 w-full h-full bg-black/80 z-15 sm:hidden">
-        <div className="flex flex-col items-center justify-center h-full gap-4">
-          <Button 
-            className="bg-tan-brown hover:bg-button-brown text-white px-10 py-4 rounded-full text-base font-medium border-none shadow-lg w-48"
-            onClick={() => {
-              setIsMobileMenuOpen(false);
-              window.location.href = '#donate';
-            }}
-          >
-            DONATE
-          </Button>
-          <Button 
-            className="bg-tan-brown hover:bg-button-brown text-white px-10 py-4 rounded-full text-base font-medium border-none shadow-lg w-48"
-            onClick={() => {
-              setIsMobileMenuOpen(false);
-              window.location.href = '#contact';
-            }}
-          >
-            JOIN US
-          </Button>
-          <Button 
-            className="bg-tan-brown hover:bg-button-brown text-white px-10 py-4 rounded-full text-base font-medium border-none shadow-lg w-48"
-            onClick={() => {
-              setIsMobileMenuOpen(false);
-              window.location.href = '#impact';
-            }}
-          >
-            EVENTS
-          </Button>
+        {/* Navigation - Responsive button layout */}
+         <div className="absolute top-4 sm:top-6 md:top-8 left-1/2 transform -translate-x-1/2 w-full flex justify-center px-4">
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 md:gap-6 items-center">
+            <Button 
+              className="bg-tan-brown hover:bg-button-brown text-white px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-xs sm:text-sm md:text-base font-medium border-none shadow-lg w-full sm:w-auto min-w-[120px] sm:min-w-[140px]"
+              onClick={() => window.location.href = '#donate'}
+            >
+              DONATE
+            </Button>
+            <Button 
+              className="bg-tan-brown hover:bg-button-brown text-white px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-xs sm:text-sm md:text-base font-medium border-none shadow-lg w-full sm:w-auto min-w-[120px] sm:min-w-[140px]"
+              onClick={() => window.location.href = '#contact'}
+            >
+              JOIN US
+            </Button>
+            <Button 
+              className="bg-tan-brown hover:bg-button-brown text-white px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-xs sm:text-sm md:text-base font-medium border-none shadow-lg w-full sm:w-auto min-w-[120px] sm:min-w-[140px]"
+              onClick={() => window.location.href = '#impact'}
+            >
+              EVENTS
+            </Button>
+          </div>
         </div>
-      </div>
-    )}
 
-    {/* Desktop Navigation Buttons - Hidden on Mobile */}
-    <div className="absolute top-4 sm:top-6 md:top-8 left-1/2 transform -translate-x-1/2 w-full justify-center px-4 z-10 hidden sm:flex">
-      <div className="flex flex-row gap-4 md:gap-6 items-center">
-        <Button 
-          className="bg-tan-brown hover:bg-button-brown text-white px-6 md:px-10 py-3 md:py-4 rounded-full text-sm md:text-base font-medium border-none shadow-lg min-w-[140px]"
-          onClick={() => window.location.href = '#donate'}
-        >
-          DONATE
-        </Button>
-        <Button 
-          className="bg-tan-brown hover:bg-button-brown text-white px-6 md:px-10 py-3 md:py-4 rounded-full text-sm md:text-base font-medium border-none shadow-lg min-w-[140px]"
-          onClick={() => window.location.href = '#contact'}
-        >
-          JOIN US
-        </Button>
-        <Button 
-          className="bg-tan-brown hover:bg-button-brown text-white px-6 md:px-10 py-3 md:py-4 rounded-full text-sm md:text-base font-medium border-none shadow-lg min-w-[140px]"
-          onClick={() => window.location.href = '#impact'}
-        >
-          EVENTS
-        </Button>
-      </div>
-    </div>
+        {/* Hero Content - Responsive typography */}
+        <div className="text-center max-w-6xl px-4 sm:px-6">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-light tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.2em] mb-6 sm:mb-8 md:mb-12 text-white">
+            HERSHIELD
+          </h1>
+        </div>
 
-    {/* Title in Image Section */}
-    <div className="text-center max-w-6xl px-4 sm:px-6">
-      <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-light tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.2em] mb-6 sm:mb-8 md:mb-12 text-white">
-        HERSHIELD
-      </h1>
-    </div>
-  </div>
-
-  {/* 30% Bottom Solid Color Section with Text */}
-  <div className="h-[30%] bg-[#EADBC8] flex flex-col justify-center items-center px-4 sm:px-6 text-center relative">
-    <h2 className="font-subtitle text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-normal mb-3 sm:mb-4 md:mb-6 tracking-wide text-warm-brown">
-      Elevating women through unity & support.
-    </h2>
-    <p className="font-subtitle text-xs sm:text-sm md:text-base leading-relaxed text-warm-brown max-w-2xl">
-      HerShield is a nonprofit movement creating safe, empowering spaces for 
-      immigrant women to be seen, heard, and supported.
-    </p>
-  </div>
-</section>
-
+        {/* Tagline and HerShield Logo - Bottom positioning */}
+        <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 lg:bottom-12 left-4 sm:left-6 md:left-8 lg:left-12 right-4 sm:right-6 md:right-8 lg:right-12">
+          <div className="flex flex-col lg:flex-row justify-between items-end gap-4 lg:gap-8">
+            {/* Tagline on the left */}
+            <div className="max-w-md lg:max-w-lg text-left">
+              <h2 className="font-serif text-sm sm:text-base md:text-lg lg:text-xl font-normal mb-2 sm:mb-3 md:mb-4 tracking-wide text-warm-brown">
+                Elevating women through unity & support.
+              </h2>
+              
+              <p className="font-sans text-xs sm:text-sm md:text-base leading-relaxed text-warm-brown">
+                HerShield is a nonprofit movement creating safe, empowering spaces for 
+                immigrant women to be seen, heard, and supported.
+              </p>
+            </div>
+            
+            {/* HerShield Logo on the right */}
+            <div className="flex flex-col items-center flex-shrink-0">
+              <img 
+                src={hershieldLogo} 
+                alt="HerShield Logo" 
+                className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 mb-1 sm:mb-2"
+              />
+              <span className="text-xs sm:text-sm font-bold text-white">HerShield</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
       {/* Our Impact Section */}
@@ -236,7 +198,7 @@ const SinglePageApp = () => {
       {/* What We Do Section */}
       <section className="min-h-screen flex items-center py-12 sm:py-16 md:py-20 bg-crimson">
         <div className="container mx-auto px-4 sm:px-6">
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-center mb-8 sm:mb-12 md:mb-16 tracking-wide text-white">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-right mb-8 sm:mb-12 md:mb-16 tracking-wide text-white">
             What We Do
           </h2>
           
