@@ -114,35 +114,37 @@ const SinglePageApp = () => {
           </h1>
         </div>
 
-        {/* HerShield Logo - Responsive positioning */}
-        <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 lg:bottom-12 right-4 sm:right-6 md:right-8 lg:right-12">
-          <div className="flex flex-col items-center">
-            <img 
-              src={hershieldLogo} 
-              alt="HerShield Logo" 
-              className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 mb-1 sm:mb-2"
-            />
-            <span className="text-xs sm:text-sm font-bold text-white">HerShield</span>
+        {/* Tagline and HerShield Logo - Bottom positioning */}
+        <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 lg:bottom-12 left-4 sm:left-6 md:left-8 lg:left-12 right-4 sm:right-6 md:right-8 lg:right-12">
+          <div className="flex flex-col lg:flex-row justify-between items-end gap-4 lg:gap-8">
+            {/* Tagline on the left */}
+            <div className="max-w-md lg:max-w-lg text-left">
+              <h2 className="font-serif text-sm sm:text-base md:text-lg lg:text-xl font-normal mb-2 sm:mb-3 md:mb-4 tracking-wide text-white">
+                Elevating women through unity & support.
+              </h2>
+              
+              <p className="font-sans text-xs sm:text-sm md:text-base leading-relaxed text-white">
+                HerShield is a nonprofit movement creating safe, empowering spaces for 
+                immigrant women to be seen, heard, and supported.
+              </p>
+            </div>
+            
+            {/* HerShield Logo on the right */}
+            <div className="flex flex-col items-center flex-shrink-0">
+              <img 
+                src={hershieldLogo} 
+                alt="HerShield Logo" 
+                className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 mb-1 sm:mb-2"
+              />
+              <span className="text-xs sm:text-sm font-bold text-white">HerShield</span>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Tagline Section */}
-      <section className="py-12 sm:py-16 md:py-20">
-        <div className="container mx-auto px-4 sm:px-6 text-center">
-          <h2 className="font-serif text-lg sm:text-xl md:text-2xl lg:text-3xl font-normal mb-4 sm:mb-6 md:mb-8 tracking-wide text-warm-brown">
-            Elevating women through unity & support.
-          </h2>
-          
-          <p className="font-sans text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed text-warm-brown px-4">
-            HerShield is a nonprofit movement creating safe, empowering spaces for 
-            immigrant women to be seen, heard, and supported.
-          </p>
-        </div>
-      </section>
 
       {/* Our Impact Section */}
-      <section id="impact" className="py-12 sm:py-16 md:py-20">
+      <section id="impact" className="min-h-screen flex items-center py-12 sm:py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6">
           <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-warm-brown mb-8 sm:mb-12 md:mb-16 tracking-wide text-center">
             OUR IMPACT
@@ -194,7 +196,7 @@ const SinglePageApp = () => {
       </section>
 
       {/* What We Do Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-crimson">
+      <section className="min-h-screen flex items-center py-12 sm:py-16 md:py-20 bg-crimson">
         <div className="container mx-auto px-4 sm:px-6">
           <h2 className="font-heading text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-center mb-8 sm:mb-12 md:mb-16 tracking-wide text-white">
             What We Do
@@ -214,7 +216,7 @@ const SinglePageApp = () => {
       </section>
 
       {/* Mission Statement Section */}
-      <section className="py-12 sm:py-16 md:py-20">
+      <section className="min-h-screen flex items-center py-12 sm:py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-warm-brown mb-6 sm:mb-8 md:mb-12">
@@ -254,7 +256,7 @@ const SinglePageApp = () => {
       </section>
 
       {/* Our Causes Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-crimson">
+      <section className="min-h-screen flex items-center py-12 sm:py-16 md:py-20 bg-crimson">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16 items-center">
             <div>
@@ -279,7 +281,7 @@ const SinglePageApp = () => {
 
 
       {/* Founder Section */}
-      <section className="py-12 sm:py-16 md:py-20">
+      <section className="min-h-screen flex items-center py-12 sm:py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6">
           <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-warm-brown text-center mb-8 sm:mb-12 md:mb-16">
             Founder of Hershield
@@ -313,7 +315,7 @@ const SinglePageApp = () => {
       </section>
 
       {/* Our Team Section */}
-      <section className="py-12 sm:py-16 md:py-20">
+      <section className="min-h-screen flex items-center py-12 sm:py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6">
           <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-warm-brown text-center mb-8 sm:mb-12 md:mb-16">
             OUR TEAM
@@ -336,7 +338,7 @@ const SinglePageApp = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-12 sm:py-16 md:py-20 bg-crimson">
+      <section id="contact" className="min-h-screen flex items-center py-12 sm:py-16 md:py-20 bg-crimson">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16">
             <div>
