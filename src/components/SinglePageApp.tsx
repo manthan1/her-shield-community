@@ -73,7 +73,7 @@ const SinglePageApp = () => {
 
   return (
     <div className="min-h-screen bg-warm-beige">
-      {/* Hero Section - Exact match to Canva design */}
+      {/* Hero Section - Fully Responsive */}
       <section 
         className="relative min-h-screen flex flex-col justify-center items-center text-white"
         style={{
@@ -83,56 +83,56 @@ const SinglePageApp = () => {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        {/* Navigation - Matching Canva button style */}
-        <div className="absolute top-8 left-1/2 transform -translate-x-1/2 flex gap-4 md:gap-6">
+        {/* Navigation - Responsive button layout */}
+        <div className="absolute top-4 sm:top-6 md:top-8 left-1/2 transform -translate-x-1/2 flex flex-col sm:flex-row gap-2 sm:gap-4 md:gap-6 w-full max-w-sm sm:max-w-none px-4 sm:px-0">
           <Button 
-            className="bg-tan-brown hover:bg-button-brown text-white px-6 md:px-10 py-3 md:py-4 rounded-full text-sm md:text-base font-medium border-none shadow-lg"
+            className="bg-tan-brown hover:bg-button-brown text-white px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-xs sm:text-sm md:text-base font-medium border-none shadow-lg"
             onClick={() => window.location.href = '#donate'}
           >
             DONATE
           </Button>
           <Button 
-            className="bg-tan-brown hover:bg-button-brown text-white px-6 md:px-10 py-3 md:py-4 rounded-full text-sm md:text-base font-medium border-none shadow-lg"
+            className="bg-tan-brown hover:bg-button-brown text-white px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-xs sm:text-sm md:text-base font-medium border-none shadow-lg"
             onClick={() => window.location.href = '#contact'}
           >
             JOIN US
           </Button>
           <Button 
-            className="bg-tan-brown hover:bg-button-brown text-white px-6 md:px-10 py-3 md:py-4 rounded-full text-sm md:text-base font-medium border-none shadow-lg"
+            className="bg-tan-brown hover:bg-button-brown text-white px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-xs sm:text-sm md:text-base font-medium border-none shadow-lg"
             onClick={() => window.location.href = '#impact'}
           >
             EVENTS
           </Button>
         </div>
 
-        {/* Hero Content - Exact positioning from Canva */}
-        <div className="text-center max-w-6xl px-6">
-          <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl font-light tracking-[0.2em] mb-8 md:mb-12 text-white">
+        {/* Hero Content - Responsive typography */}
+        <div className="text-center max-w-6xl px-4 sm:px-6">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-light tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.2em] mb-6 sm:mb-8 md:mb-12 text-white">
             HERSHIELD
           </h1>
         </div>
 
-        {/* HerShield Logo - Bottom right like in Canva */}
-        <div className="absolute bottom-8 md:bottom-12 right-8 md:right-12">
+        {/* HerShield Logo - Responsive positioning */}
+        <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 lg:bottom-12 right-4 sm:right-6 md:right-8 lg:right-12">
           <div className="flex flex-col items-center">
             <img 
               src={hershieldLogo} 
               alt="HerShield Logo" 
-              className="w-12 h-12 md:w-16 md:h-16 mb-2"
+              className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 mb-1 sm:mb-2"
             />
-            <span className="text-xs md:text-sm font-bold text-white">HerShield</span>
+            <span className="text-xs sm:text-sm font-bold text-white">HerShield</span>
           </div>
         </div>
       </section>
 
       {/* Tagline Section */}
-      <section className="py-16 md:py-20">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="font-serif text-xl md:text-2xl lg:text-3xl font-normal mb-6 md:mb-8 tracking-wide text-warm-brown">
+      <section className="py-12 sm:py-16 md:py-20">
+        <div className="container mx-auto px-4 sm:px-6 text-center">
+          <h2 className="font-serif text-lg sm:text-xl md:text-2xl lg:text-3xl font-normal mb-4 sm:mb-6 md:mb-8 tracking-wide text-warm-brown">
             Elevating women through unity & support.
           </h2>
           
-          <p className="font-sans text-base md:text-lg max-w-2xl mx-auto leading-relaxed text-warm-brown">
+          <p className="font-sans text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed text-warm-brown px-4">
             HerShield is a nonprofit movement creating safe, empowering spaces for 
             immigrant women to be seen, heard, and supported.
           </p>
@@ -140,40 +140,40 @@ const SinglePageApp = () => {
       </section>
 
       {/* Our Impact Section */}
-      <section id="impact" className="py-16 md:py-20">
-        <div className="container mx-auto px-6">
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-warm-brown mb-12 md:mb-16 tracking-wide text-center">
+      <section id="impact" className="py-12 sm:py-16 md:py-20">
+        <div className="container mx-auto px-4 sm:px-6">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-warm-brown mb-8 sm:mb-12 md:mb-16 tracking-wide text-center">
             OUR IMPACT
           </h2>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
             {/* Statistics on the left */}
-            <div className="space-y-8 md:space-y-12">
+            <div className="space-y-6 sm:space-y-8 md:space-y-12">
               <div className="text-center md:text-left">
-                <div className="text-4xl md:text-6xl lg:text-7xl font-light text-warm-brown mb-2 md:mb-4">400</div>
-                <p className="text-base md:text-lg text-warm-brown font-medium tracking-wide">MONEY WE HAVE RAISED</p>
+                <div className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-light text-warm-brown mb-1 sm:mb-2 md:mb-4">400</div>
+                <p className="text-sm sm:text-base md:text-lg text-warm-brown font-medium tracking-wide">MONEY WE HAVE RAISED</p>
               </div>
               <div className="text-center md:text-left">
-                <div className="text-4xl md:text-6xl lg:text-7xl font-light text-warm-brown mb-2 md:mb-4">400,000</div>
-                <p className="text-base md:text-lg text-warm-brown font-medium tracking-wide">PEOPLE WE HAVE HELPED</p>
+                <div className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-light text-warm-brown mb-1 sm:mb-2 md:mb-4">400,000</div>
+                <p className="text-sm sm:text-base md:text-lg text-warm-brown font-medium tracking-wide">PEOPLE WE HAVE HELPED</p>
               </div>
               <div className="text-center md:text-left">
-                <div className="text-4xl md:text-6xl lg:text-7xl font-light text-warm-brown mb-2 md:mb-4">10</div>
-                <p className="text-base md:text-lg text-warm-brown font-medium tracking-wide">OUR TEAM</p>
+                <div className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-light text-warm-brown mb-1 sm:mb-2 md:mb-4">10</div>
+                <p className="text-sm sm:text-base md:text-lg text-warm-brown font-medium tracking-wide">OUR TEAM</p>
               </div>
             </div>
 
             {/* Event Card on the right */}
             <div className="flex justify-center lg:justify-end">
-              <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full">
+              <div className="bg-white p-4 sm:p-6 rounded-lg shadow-lg max-w-sm w-full">
                 <img 
                   src="/placeholder.svg" 
                   alt="CoHere Event" 
-                  className="w-full h-32 md:h-40 object-cover rounded mb-4"
+                  className="w-full h-28 sm:h-32 md:h-40 object-cover rounded mb-3 sm:mb-4"
                 />
                 <div className="text-right">
-                  <div className="text-warm-brown font-bold text-lg">CoHere</div>
-                  <div className="text-sm text-warm-brown">Elevate & Engage</div>
+                  <div className="text-warm-brown font-bold text-base sm:text-lg">CoHere</div>
+                  <div className="text-xs sm:text-sm text-warm-brown">Elevate & Engage</div>
                   <div className="text-xs text-warm-brown mt-2 leading-relaxed">
                     519 Powell Street, West<br/>
                     Side Hall N2C 2H9<br/>
@@ -182,7 +182,7 @@ const SinglePageApp = () => {
                     HerShield
                   </div>
                 </div>
-                <Button className="w-full mt-4 bg-warm-brown hover:bg-button-brown text-white rounded-full">
+                <Button className="w-full mt-3 sm:mt-4 bg-warm-brown hover:bg-button-brown text-white rounded-full text-sm">
                   ATTEND OUR EVENT
                 </Button>
               </div>
@@ -192,18 +192,18 @@ const SinglePageApp = () => {
       </section>
 
       {/* What We Do Section */}
-      <section className="py-16 md:py-20 bg-crimson">
-        <div className="container mx-auto px-6">
-          <h2 className="font-heading text-6xl md:text-7xl text-center mb-12 md:mb-16 tracking-wide text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-crimson">
+        <div className="container mx-auto px-4 sm:px-6">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-center mb-8 sm:mb-12 md:mb-16 tracking-wide text-white">
             What We Do
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-6xl mx-auto">
             {whatWeDo.map((item, index) => (
               <Card key={index} className="bg-white border-warm-brown/20">
-                <CardContent className="p-6 md:p-8 text-center">
-                  <h3 className="font-serif text-lg md:text-xl font-bold mb-4 text-warm-brown">{item.title}</h3>
-                  <p className="text-sm md:text-base leading-relaxed text-warm-brown">{item.description}</p>
+                <CardContent className="p-4 sm:p-6 md:p-8 text-center">
+                  <h3 className="font-serif text-base sm:text-lg md:text-xl font-bold mb-3 sm:mb-4 text-warm-brown">{item.title}</h3>
+                  <p className="text-xs sm:text-sm md:text-base leading-relaxed text-warm-brown">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -212,23 +212,23 @@ const SinglePageApp = () => {
       </section>
 
       {/* Mission Statement Section */}
-      <section className="py-16 md:py-20">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-16 md:py-20">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-6xl mx-auto">
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-warm-brown mb-8 md:mb-12">
+            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-warm-brown mb-6 sm:mb-8 md:mb-12">
               Mission Statement
             </h2>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
               <div>
-                <p className="text-base md:text-lg text-warm-brown leading-relaxed mb-6 md:mb-8">
+                <p className="text-sm sm:text-base md:text-lg text-warm-brown leading-relaxed mb-4 sm:mb-6 md:mb-8">
                   Heritage Artes Society is a nonprofit organization in Salguerro 
                   committed to protecting the city's built structures and historical sites. 
                   We are Salguerro's primary advocate of the value of the city's 
                   cultural heritage.
                 </p>
                 
-                <div className="flex flex-wrap gap-2 md:gap-4 text-warm-brown font-medium text-sm md:text-base">
+                <div className="flex flex-wrap gap-1 sm:gap-2 md:gap-4 text-warm-brown font-medium text-xs sm:text-sm md:text-base">
                   <span>SAFETY</span>
                   <span>·</span>
                   <span>COMMUNITY</span>
@@ -242,7 +242,7 @@ const SinglePageApp = () => {
               </div>
               
               <div className="flex justify-center">
-                <div className="w-48 h-48 md:w-64 md:h-64 bg-gray-300 rounded-3xl">
+                <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 bg-gray-300 rounded-3xl">
                   {/* Placeholder for architectural image */}
                 </div>
               </div>
@@ -252,22 +252,22 @@ const SinglePageApp = () => {
       </section>
 
       {/* Our Causes Section */}
-      <section className="py-16 md:py-20 bg-crimson">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
+      <section className="py-12 sm:py-16 md:py-20 bg-crimson">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16 items-center">
             <div>
-              <div className="space-y-4 md:space-y-6">
+              <div className="space-y-3 sm:space-y-4 md:space-y-6">
                 {causes.map((cause, index) => (
-                  <div key={index} className="flex items-center gap-3 md:gap-4">
-                    <span className="text-xl md:text-2xl">{cause.emoji}</span>
-                    <span className="text-base md:text-lg font-medium text-white">{cause.text}</span>
+                  <div key={index} className="flex items-center gap-2 sm:gap-3 md:gap-4">
+                    <span className="text-lg sm:text-xl md:text-2xl">{cause.emoji}</span>
+                    <span className="text-sm sm:text-base md:text-lg font-medium text-white">{cause.text}</span>
                   </div>
                 ))}
               </div>
             </div>
             
             <div className="text-center lg:text-right">
-              <h2 className="font-heading text-6xl md:text-7xl font-normal tracking-wide text-white">
+              <h2 className="font-heading text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-normal tracking-wide text-white">
                 OUR<br/>CAUSES
               </h2>
             </div>
@@ -277,30 +277,30 @@ const SinglePageApp = () => {
 
 
       {/* Founder Section */}
-      <section className="py-16 md:py-20">
-        <div className="container mx-auto px-6">
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-warm-brown text-center mb-12 md:mb-16">
+      <section className="py-12 sm:py-16 md:py-20">
+        <div className="container mx-auto px-4 sm:px-6">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-warm-brown text-center mb-8 sm:mb-12 md:mb-16">
             Founder of Hershield
           </h2>
           
           <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center">
               <div className="lg:col-span-1">
                 <img 
                   src={founderImage} 
                   alt="Shafoli Kapur" 
-                  className="w-40 h-40 md:w-48 md:h-48 rounded-3xl object-cover mx-auto"
+                  className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-3xl object-cover mx-auto"
                 />
               </div>
               <div className="lg:col-span-1">
                 <img 
                   src="/placeholder.svg" 
                   alt="Working" 
-                  className="w-40 h-40 md:w-48 md:h-48 rounded-3xl object-cover mx-auto"
+                  className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-3xl object-cover mx-auto"
                 />
               </div>
               <div className="lg:col-span-1 text-center">
-                <p className="text-warm-brown text-sm md:text-base">
+                <p className="text-warm-brown text-xs sm:text-sm md:text-base">
                   A little biography about Shafoli Kapur.<br/>
                   blahblahblah
                 </p>
@@ -311,22 +311,22 @@ const SinglePageApp = () => {
       </section>
 
       {/* Our Team Section */}
-      <section className="py-16 md:py-20">
-        <div className="container mx-auto px-6">
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-warm-brown text-center mb-12 md:mb-16">
+      <section className="py-12 sm:py-16 md:py-20">
+        <div className="container mx-auto px-4 sm:px-6">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-warm-brown text-center mb-8 sm:mb-12 md:mb-16">
             OUR TEAM
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 max-w-6xl mx-auto">
             {teamMembers.map((member, index) => (
               <div key={index} className="text-center">
-                <div className="w-full h-40 md:h-48 bg-gradient-to-b from-blue-200 to-green-300 rounded-3xl mb-4">
+                <div className="w-full h-32 sm:h-36 md:h-40 lg:h-48 bg-gradient-to-b from-blue-200 to-green-300 rounded-3xl mb-3 sm:mb-4">
                   {/* Placeholder team member image */}
                 </div>
-                <h3 className="font-serif text-base md:text-lg font-bold text-warm-brown mb-2">
+                <h3 className="font-serif text-sm sm:text-base md:text-lg font-bold text-warm-brown mb-1 sm:mb-2">
                   {member.name}
                 </h3>
-                <p className="text-sm text-warm-brown">{member.description}</p>
+                <p className="text-xs sm:text-sm text-warm-brown">{member.description}</p>
               </div>
             ))}
           </div>
@@ -334,47 +334,47 @@ const SinglePageApp = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 md:py-20 bg-crimson">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16">
+      <section id="contact" className="py-12 sm:py-16 md:py-20 bg-crimson">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16">
             <div>
-              <h2 className="font-heading text-6xl md:text-7xl mb-6 md:mb-8 text-white">Contact us</h2>
+              <h2 className="font-heading text-3xl sm:text-4xl md:text-6xl lg:text-7xl mb-4 sm:mb-6 md:mb-8 text-white">Contact us</h2>
               
-              <div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
-                <p className="text-base md:text-lg text-white">Heritage Artes Society</p>
+              <div className="space-y-2 sm:space-y-3 md:space-y-4 mb-4 sm:mb-6 md:mb-8">
+                <p className="text-sm sm:text-base md:text-lg text-white">Heritage Artes Society</p>
                 <div className="flex items-center gap-2">
-                  <Mail className="h-4 w-4 md:h-5 md:w-5 text-white" />
-                  <span className="text-white">hello@reallygreatsite.com</span>
+                  <Mail className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
+                  <span className="text-xs sm:text-sm md:text-base text-white">hello@reallygreatsite.com</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-white">@reallygreatsite</span>
+                  <span className="text-xs sm:text-sm md:text-base text-white">@reallygreatsite</span>
                 </div>
               </div>
             </div>
             
             <div id="donate">
               <Card className="bg-white border-warm-brown/20">
-                <CardContent className="p-6 md:p-8">
-                  <h3 className="font-subtitle text-4xl mb-4 md:mb-6 text-warm-brown">Join Our Mailing List</h3>
+                <CardContent className="p-4 sm:p-6 md:p-8">
+                  <h3 className="font-subtitle text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4 md:mb-6 text-warm-brown">Join Our Mailing List</h3>
                   
-                  <div className="space-y-4">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="space-y-3 sm:space-y-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                       <div>
-                        <label className="block text-sm font-medium mb-1 text-warm-brown">First Name</label>
-                        <Input className="bg-white border-gray-300" />
+                        <label className="block text-xs sm:text-sm font-medium mb-1 text-warm-brown">First Name</label>
+                        <Input className="bg-white border-gray-300 text-sm" />
                       </div>
                       <div>
-                        <label className="block text-sm font-medium mb-1 text-warm-brown">Last Name</label>
-                        <Input className="bg-white border-gray-300" />
+                        <label className="block text-xs sm:text-sm font-medium mb-1 text-warm-brown">Last Name</label>
+                        <Input className="bg-white border-gray-300 text-sm" />
                       </div>
                     </div>
                     
                     <div>
-                      <label className="block text-sm font-medium mb-1 text-warm-brown">Email</label>
-                      <Input type="email" className="bg-white border-gray-300" />
+                      <label className="block text-xs sm:text-sm font-medium mb-1 text-warm-brown">Email</label>
+                      <Input type="email" className="bg-white border-gray-300 text-sm" />
                     </div>
                     
-                    <Button className="bg-warm-brown hover:bg-button-brown text-white px-6 md:px-8 py-2 rounded-full">
+                    <Button className="bg-warm-brown hover:bg-button-brown text-white px-4 sm:px-6 md:px-8 py-2 rounded-full text-sm">
                       SIGN UP
                     </Button>
                   </div>
