@@ -119,7 +119,7 @@ const SinglePageApp = () => {
           <div className="flex flex-col lg:flex-row justify-between items-end gap-4 lg:gap-8">
             {/* Tagline on the left */}
             <div className="max-w-md lg:max-w-lg text-left">
-              <h2 className="font-serif text-sm sm:text-base md:text-lg lg:text-xl font-normal mb-2 sm:mb-3 md:mb-4 tracking-wide text-white">
+              <h2 className="font-serif text-sm sm:text-base md:text-lg lg:text-xl font-normal mb-2 sm:mb-3 md:mb-4 tracking-wide text-warm-brown">
                 Elevating women through unity & support.
               </h2>
               
