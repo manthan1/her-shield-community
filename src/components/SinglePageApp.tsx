@@ -75,9 +75,9 @@ const SinglePageApp = () => {
     <div className="min-h-screen bg-warm-beige">
       {/* Hero Section - Fully Responsive */}
       <section className="relative h-screen flex flex-col">
-  {/* 80% Top Image Background Section */}
+  {/* 70% Top Image Background Section */}
   <div
-    className="h-4/5 flex flex-col justify-center items-center text-white relative"
+    className="h-[70%] flex flex-col justify-center items-center text-white relative"
     style={{
       backgroundImage: `url(${canvaHeroImage})`,
       backgroundSize: 'cover',
@@ -117,9 +117,9 @@ const SinglePageApp = () => {
     </div>
   </div>
 
-  {/* 20% Bottom Solid Color Section with Text */}
-  <div className="h-1/5 bg-[#EADBC8] flex flex-col justify-center items-center px-4 sm:px-6 text-center relative">
-    <h2 className="font-subtitle text-sm sm:text-base md:text-lg lg:text-xl font-normal mb-2 sm:mb-3 md:mb-4 tracking-wide text-warm-brown">
+  {/* 30% Bottom Solid Color Section with Text */}
+  <div className="h-[30%] bg-[#EADBC8] flex flex-col justify-center items-center px-4 sm:px-6 text-center relative">
+    <h2 className="font-subtitle text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-normal mb-3 sm:mb-4 md:mb-6 tracking-wide text-warm-brown">
       Elevating women through unity & support.
     </h2>
     <p className="font-subtitle text-xs sm:text-sm md:text-base leading-relaxed text-warm-brown max-w-2xl">
