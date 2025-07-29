@@ -73,8 +73,73 @@ const SinglePageApp = () => {
 
   return (
     <div className="min-h-screen bg-warm-beige">
-      {/* Hero Section - Fully Responsive */}
-      <section 
+      {/* Hero Section - Fully Responsive 
+      {/* Hero Section - 80-20 Split */}
+<section className="relative min-h-screen flex">
+  {/* 80% Image Background */}
+  <div
+    className="w-4/5 flex flex-col justify-center items-center text-white"
+    style={{
+      backgroundImage: `url(${canvaHeroImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }}
+  >
+    {/* Navigation Buttons */}
+    <div className="absolute top-4 sm:top-6 md:top-8 left-1/2 transform -translate-x-1/2 w-full flex justify-center px-4 z-10">
+      <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 md:gap-6 items-center">
+        <Button 
+          className="bg-tan-brown hover:bg-button-brown text-white px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-xs sm:text-sm md:text-base font-medium border-none shadow-lg w-full sm:w-auto min-w-[120px] sm:min-w-[140px]"
+          onClick={() => window.location.href = '#donate'}
+        >
+          DONATE
+        </Button>
+        <Button 
+          className="bg-tan-brown hover:bg-button-brown text-white px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-xs sm:text-sm md:text-base font-medium border-none shadow-lg w-full sm:w-auto min-w-[120px] sm:min-w-[140px]"
+          onClick={() => window.location.href = '#contact'}
+        >
+          JOIN US
+        </Button>
+        <Button 
+          className="bg-tan-brown hover:bg-button-brown text-white px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-xs sm:text-sm md:text-base font-medium border-none shadow-lg w-full sm:w-auto min-w-[120px] sm:min-w-[140px]"
+          onClick={() => window.location.href = '#impact'}
+        >
+          EVENTS
+        </Button>
+      </div>
+    </div>
+
+    {/* Title in Image Section */}
+    <div className="text-center max-w-6xl px-4 sm:px-6">
+      <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-light tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.2em] mb-6 sm:mb-8 md:mb-12 text-white">
+        HERSHIELD
+      </h1>
+    </div>
+  </div>
+
+  {/* 20% Solid Color Section with Text */}
+  <div className="w-1/5 bg-[#EADBC8] flex flex-col justify-center items-center px-4 sm:px-6 text-center">
+    <h2 className="font-serif text-sm sm:text-base md:text-lg lg:text-xl font-normal mb-2 sm:mb-3 md:mb-4 tracking-wide text-warm-brown">
+      Elevating women through unity & support.
+    </h2>
+    <p className="font-sans text-xs sm:text-sm md:text-base leading-relaxed text-warm-brown">
+      HerShield is a nonprofit movement creating safe, empowering spaces for 
+      immigrant women to be seen, heard, and supported.
+    </p>
+    {/* Logo Optional */}
+    <div className="mt-4 flex flex-col items-center">
+      <img 
+        src={hershieldLogo} 
+        alt="HerShield Logo" 
+        className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 mb-1 sm:mb-2"
+      />
+      <span className="text-xs sm:text-sm font-bold text-warm-brown">HerShield</span>
+    </div>
+  </div>
+</section>
+
+      {/* <section 
         className="relative min-h-screen flex flex-col justify-center items-center text-white"
         style={{
           backgroundImage: `url(${canvaHeroImage})`,
@@ -109,11 +174,9 @@ const SinglePageApp = () => {
 
         {/* Hero Content - Responsive typography */}
         <div className="text-center max-w-6xl px-4 sm:px-6">
-                    <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-light tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.2em] mb-6 sm:mb-8 md:mb-12 text-white">
-
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-light tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.2em] mb-6 sm:mb-8 md:mb-12 text-white">
             HERSHIELD
-                    </h1>
-          
+          </h1>
         </div>
 
         {/* Tagline and HerShield Logo - Bottom positioning */}
@@ -142,7 +205,7 @@ const SinglePageApp = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
       {/* Our Impact Section */}
