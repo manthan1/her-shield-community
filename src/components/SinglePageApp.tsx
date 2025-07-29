@@ -84,25 +84,27 @@ const SinglePageApp = () => {
         }}
       >
         {/* Navigation - Responsive button layout */}
-        <div className="absolute top-4 sm:top-6 md:top-8 left-1/2 transform -translate-x-1/2 flex flex-col sm:flex-row gap-2 sm:gap-4 md:gap-6 w-full max-w-sm sm:max-w-none px-4 sm:px-0">
-          <Button 
-            className="bg-tan-brown hover:bg-button-brown text-white px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-xs sm:text-sm md:text-base font-medium border-none shadow-lg"
-            onClick={() => window.location.href = '#donate'}
-          >
-            DONATE
-          </Button>
-          <Button 
-            className="bg-tan-brown hover:bg-button-brown text-white px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-xs sm:text-sm md:text-base font-medium border-none shadow-lg"
-            onClick={() => window.location.href = '#contact'}
-          >
-            JOIN US
-          </Button>
-          <Button 
-            className="bg-tan-brown hover:bg-button-brown text-white px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-xs sm:text-sm md:text-base font-medium border-none shadow-lg"
-            onClick={() => window.location.href = '#impact'}
-          >
-            EVENTS
-          </Button>
+         <div className="absolute top-4 sm:top-6 md:top-8 left-1/2 transform -translate-x-1/2 w-full flex justify-center px-4">
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 md:gap-6 items-center">
+            <Button 
+              className="bg-tan-brown hover:bg-button-brown text-white px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-xs sm:text-sm md:text-base font-medium border-none shadow-lg w-full sm:w-auto min-w-[120px] sm:min-w-[140px]"
+              onClick={() => window.location.href = '#donate'}
+            >
+              DONATE
+            </Button>
+            <Button 
+              className="bg-tan-brown hover:bg-button-brown text-white px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-xs sm:text-sm md:text-base font-medium border-none shadow-lg w-full sm:w-auto min-w-[120px] sm:min-w-[140px]"
+              onClick={() => window.location.href = '#contact'}
+            >
+              JOIN US
+            </Button>
+            <Button 
+              className="bg-tan-brown hover:bg-button-brown text-white px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-xs sm:text-sm md:text-base font-medium border-none shadow-lg w-full sm:w-auto min-w-[120px] sm:min-w-[140px]"
+              onClick={() => window.location.href = '#impact'}
+            >
+              EVENTS
+            </Button>
+          </div>
         </div>
 
         {/* Hero Content - Responsive typography */}
