@@ -75,7 +75,7 @@ const SinglePageApp = () => {
     <div className="min-h-screen bg-warm-beige">
       {/* Hero Section - Fully Responsive */}
       <section 
-        className="relative min-h-[60vh] flex flex-col justify-center items-center text-white"
+        className="relative min-h-[80vh] flex flex-col justify-center items-center text-white"
         style={{
           backgroundImage: `url(${canvaHeroImage})`,
           backgroundSize: 'cover',
