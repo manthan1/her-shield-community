@@ -196,20 +196,19 @@ const SinglePageApp = () => {
       </section>
 
       {/* What We Do Section */}
-      {/* What We Do Section */}
 <section className="min-h-screen flex items-center py-12 sm:py-16 md:py-20 bg-crimson">
   <div className="container mx-auto px-4 sm:px-6">
+    {/* This new wrapper constrains both the title and the grid below */}
     <div className="max-w-6xl mx-auto">
       <h2 className="font-heading text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-right mb-8 sm:mb-12 md:mb-16 tracking-wide text-white">
         What We Do
       </h2>
       
+      {/* The max-w-6xl and mx-auto classes are removed from here as they are now on the parent */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
         {whatWeDo.map((item, index) => (
-          // 1. Make the card a flex container
-          <Card key={index} className="bg-white border-warm-brown/20 flex flex-col">
-            {/* 2. Allow the content area to grow and fill the space */}
-            <CardContent className="p-4 sm:p-6 md:p-8 text-center flex-grow">
+          <Card key={index} className="bg-white border-warm-brown/20">
+            <CardContent className="p-4 sm:p-6 md:p-8 text-center">
               <h3 className="font-serif text-base sm:text-lg md:text-xl font-bold mb-3 sm:mb-4 text-warm-brown">{item.title}</h3>
               <p className="text-xs sm:text-sm md:text-base leading-relaxed text-warm-brown">{item.description}</p>
             </CardContent>
