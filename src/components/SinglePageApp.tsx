@@ -126,14 +126,14 @@ const SinglePageApp = () => {
       HerShield is a nonprofit movement creating safe, empowering spaces for 
       immigrant women to be seen, heard, and supported.
     </p>
-    {/* Logo moved to right side */}
+    {/* Logo moved to right side - Responsive */}
     <div className="absolute right-4 sm:right-6 md:right-8 top-1/2 transform -translate-y-1/2 flex flex-col items-center">
       <img 
         src={hershieldLogo} 
         alt="HerShield Logo" 
-        className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 mb-1 sm:mb-2"
+        className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 mb-1 sm:mb-2"
       />
-      <span className="text-xs sm:text-sm font-bold text-warm-brown">HerShield</span>
+      <span className="text-sm sm:text-base md:text-lg font-bold text-warm-brown">HerShield</span>
     </div>
   </div>
 </section>
@@ -201,8 +201,8 @@ const SinglePageApp = () => {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-6xl mx-auto">
             {whatWeDo.map((item, index) => (
-              <Card key={index} className="bg-white border-warm-brown/20">
-                <CardContent className="p-4 sm:p-6 md:p-8 text-center">
+              <Card key={index} className="bg-white border-warm-brown/20 h-80 sm:h-96 md:h-80">
+                <CardContent className="p-4 sm:p-6 md:p-8 text-center h-full flex flex-col justify-center">
                   <h3 className="font-serif text-base sm:text-lg md:text-xl font-bold mb-3 sm:mb-4 text-warm-brown">{item.title}</h3>
                   <p className="text-xs sm:text-sm md:text-base leading-relaxed text-warm-brown">{item.description}</p>
                 </CardContent>
